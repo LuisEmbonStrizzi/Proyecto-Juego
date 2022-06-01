@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
+  
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -35,15 +38,18 @@ public class Movimiento : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < 1)
         {
-            transform.Translate(0, 1, 0);
+           transform.Translate(0, 1, 0);              
         }
 
         if(transform.position.y < -5)
         {
             transform.position = new Vector3(11, 0.5f, 0.2f);
         }
+
+        
+
     }
 
     void OnCollisionEnter(Collision col)
@@ -55,4 +61,6 @@ public class Movimiento : MonoBehaviour
         }
 
     }
+
+   
 }
