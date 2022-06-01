@@ -39,5 +39,20 @@ public class Movimiento : MonoBehaviour
         {
             transform.Translate(0, 1, 0);
         }
+
+        if(transform.position.y < -5)
+        {
+            transform.position = new Vector3(11, 0.5f, 0.2f);
+        }
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Obstaculo1")
+        {
+
+            transform.position = new Vector3(11, 0.5f, 0.2f);
+        }
+
     }
 }
