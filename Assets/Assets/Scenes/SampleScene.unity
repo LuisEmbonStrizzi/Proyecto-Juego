@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 176904021}
   - component: {fileID: 176904020}
   m_Layer: 0
-  m_Name: Obstaculo3 (2)
+  m_Name: Obstaculo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 376256219}
   - component: {fileID: 376256218}
   m_Layer: 0
-  m_Name: Obstaculo2 (1)
+  m_Name: Obstaculo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -445,7 +445,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 1354532900}
   - component: {fileID: 1354532899}
   m_Layer: 0
-  m_Name: Obstaculo3 (3)
+  m_Name: Obstaculo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,7 +657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 1593483811}
   - component: {fileID: 1593483809}
   m_Layer: 0
-  m_Name: Obstaculo2 (2)
+  m_Name: Obstaculo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,7 +793,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -871,7 +871,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2d730d0cc0679ba479e994ce993c99b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 1824318733}
   - component: {fileID: 1824318732}
   m_Layer: 0
-  m_Name: Obstaculo3 (1)
+  m_Name: Obstaculo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
+  - {fileID: 2100000, guid: 3bbde59f220946a44b6dd8a987ae6178, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1050,6 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6adbcbb61373c0a44b62ea44346145a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpForce: 6
 --- !u!135 &1861829029
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1080,7 +1081,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 894581b35ed691f45a32037fb65c8b53, type: 2}
+  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1131,8 +1132,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861829027}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 0.9
+  m_Drag: 2
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1294,7 +1295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 894581b35ed691f45a32037fb65c8b53, type: 2}
+  - {fileID: 2100000, guid: 09921f284cdab0d419eb280dee7435f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

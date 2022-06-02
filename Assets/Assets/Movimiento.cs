@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-  
+
+    Rigidbody rb;
+    public float JumpForce;
+    bool HasJump;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
+        HasJump = true;
     }
-    
+
+   
+   
 
     // Update is called once per frame
     void Update()
@@ -38,9 +44,10 @@ public class Movimiento : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < 1)
+        if (Input.GetKeyDown(KeyCode.Space) && HasJump)
         {
-           transform.Translate(0, 1, 0);              
+            rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+            HasJump = false;
         }
 
         if(transform.position.y < -5)
@@ -60,34 +67,9 @@ public class Movimiento : MonoBehaviour
             transform.position = new Vector3(11, 0.5f, 0.2f);
         }
 
-        if (col.gameObject.name == "Obstaculo2 (1)")
+        if (col.gameObject.name == "Plane")
         {
-
-            transform.position = new Vector3(11, 0.5f, 0.2f);
-        }
-
-        if (col.gameObject.name == "Obstaculo2 (2)")
-        {
-
-            transform.position = new Vector3(11, 0.5f, 0.2f);
-        }
-
-        if (col.gameObject.name == "Obstaculo3 (1)")
-        {
-
-            transform.position = new Vector3(11, 0.5f, 0.2f);
-        }
-
-        if (col.gameObject.name == "Obstaculo3 (2)")
-        {
-
-            transform.position = new Vector3(11, 0.5f, 0.2f);
-        }
-
-        if (col.gameObject.name == "Obstaculo3 (3)")
-        {
-
-            transform.position = new Vector3(11, 0.5f, 0.2f);
+            HasJump = true;
         }
 
     }
