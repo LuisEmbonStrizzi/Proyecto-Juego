@@ -29,8 +29,7 @@ public class BallGenerato : MonoBehaviour
             clonBola = Instantiate(BallPrefab);
             clonBola.transform.position = BallSpawnPoint.transform.position;
             clonBola.GetComponent<Rigidbody>().AddForce(Vector3.left * ShootForce, ForceMode.Impulse);
-            
-            
+            Destroy(clonBola, 2);
         }
 
     }
